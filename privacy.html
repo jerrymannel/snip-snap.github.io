@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — StepSnap</title>
+  <meta name="description" content="Privacy Policy for StepSnap - Turn Any Webpage Into a Step-by-Step Guide." />
+  <link rel="icon" type="image/png" href="assets/icon48.png" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .legal-content {
+      max-width: 800px;
+      margin: 120px auto 80px;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 24px;
+      color: var(--fg);
+    }
+
+    .legal-content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(135deg, #fff 0%, rgba(255, 255, 255, 0.7) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .last-updated {
+      color: var(--fg-muted);
+      margin-bottom: 2rem;
+      font-size: 0.9rem;
+    }
+
+    .legal-content h2 {
+      font-size: 1.5rem;
+      margin: 2rem 0 1rem;
+    }
+
+    .legal-content p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      color: var(--fg-muted);
+    }
+
+    .legal-content ul {
+      margin-bottom: 1.5rem;
+      padding-left: 1.5rem;
+    }
+
+    .legal-content li {
+      margin-bottom: 0.5rem;
+      color: var(--fg-muted);
+      line-height: 1.6;
+    }
+
+    .back-home {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      margin-bottom: 2rem;
+      transition: opacity 0.2s;
+    }
+
+    .back-home:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/icon48.png" alt="StepSnap icon" />
+        StepSnap
+      </a>
+      <a href="index.html#install" class="nav-cta">
+        <svg width="16" height="16" fill="none" viewBox="0 0 16 16">
+          <path d="M8 1v9M4.5 6.5 8 10l3.5-3.5M2 12h12" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        Add to Chrome
+      </a>
+    </div>
+  </nav>
+
+  <main class="legal-content">
+    <a href="index.html" class="back-home">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+      Back to Home
+    </a>
+
+    <h1>Privacy Policy</h1>
+    <p class="last-updated">Last Updated: March 13, 2026</p>
+
+    <h2>Overview</h2>
+    <p>StepSnap ("the Extension") is a browser extension designed to help users automatically generate step-by-step
+      guides by recording their in-browser interactions.</p>
+    <p>We are committed to protecting your privacy. This Privacy Policy explains our practices regarding the collection,
+      use, and disclosure of your information when you use the Extension.</p>
+
+    <h2>Information We Collect</h2>
+    <p><strong>We do not collect any personal data.</strong></p>
+    <p>The Extension operates completely locally within your web browser. All recorded data, including:</p>
+    <ul>
+      <li>Clicks and interactions</li>
+      <li>Typed text</li>
+      <li>Scrolling activity</li>
+      <li>Captured screenshots of active tabs</li>
+    </ul>
+    <p>...is stored exclusively in your browser's local storage (<code>chrome.storage.local</code>). We do not have
+      servers, and we do not transmit, upload, or share any of this data with ourselves or any third parties.</p>
+
+    <h2>How Your Information is Used</h2>
+    <p>The data captured by the Extension is used solely for the purpose of generating a PDF guide containing your
+      recorded steps and screenshots. Once the PDF is generated and downloaded, or if you clear the session manually,
+      the recorded data is cleared from your local storage.</p>
+
+    <h2>Permissions</h2>
+    <p>The Extension requires the following permissions to function correctly:</p>
+    <ul>
+      <li><strong>storage</strong>: Used to temporarily store recording state and steps locally across page navigations.
+      </li>
+      <li><strong>activeTab &amp; scripting</strong>: Used to inject the script that listens for your clicks and
+        keyboard inputs into the specific page you are recording. This enables the core functionality of tracking steps.
+      </li>
+      <li><strong>host_permissions for &lt;all_urls&gt;</strong>: Required for <code>captureVisibleTab</code>, which
+        allows the Extension to take screenshots of the page you are working on to include in your output PDF.</li>
+      <li><strong>unlimitedStorage</strong>: Used to ensure the Extension has enough local space to save screenshots
+        before the PDF is compiled.</li>
+    </ul>
+
+    <h2>Third-Party Services</h2>
+    <p>We do not use any third-party analytics, trackers, or advertising services.</p>
+
+    <h2>Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Your continued use of the Extension after any modifications
+      indicates your acceptance of the updated Privacy Policy.</p>
+
+    <h2>Contact</h2>
+    <p>If you have any questions or suggestions about our Privacy Policy, please feel free to contact us.</p>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 StepSnap &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp; Built with ❤️ for people
+      who document things</p>
+  </footer>
+
+</body>
+
+</html>
